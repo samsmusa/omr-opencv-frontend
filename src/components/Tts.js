@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import useAxios from "../hooks/useAxios";
 import { useForm } from "react-hook-form";
-import Spinner from "./Spinner";
+import Spin from "./Spinner";
 
 export default function Tts() {
   const {
@@ -95,9 +95,9 @@ export default function Tts() {
                     />
                   </button>
                 ) : (
-                  <Spinner isLoading={isLoading} error={error}>
+                  <Spin isLoading={isLoading} error={error}>
                     <audio src={audioUrl} controls />
-                  </Spinner>
+                  </Spin>
                 )}
 
                 <span class="sr-only">Pause video</span>
