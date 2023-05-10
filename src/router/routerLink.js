@@ -1,8 +1,1 @@
-export const navItems = [
-  { id: "abcd1", title: "Home", link: "" },
-  { id: "abcd2", title: "ScanOMR", link: "scan" },
-  { id: "abcd3", title: "Results", link: "results" },
-  { id: "abcd4", title: "Students", link: "students" },
-  { id: "abcd5", title: "Exams", link: "exams" },
-  { id: "abcd6", title: "Class", link: "class" },
-];
+export const navItems = [{ id: "abcd1", title: "Home", link: "" }];

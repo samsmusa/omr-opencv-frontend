@@ -13,7 +13,7 @@ export default function Footer() {
                 alt="FlowBite Logo"
               />
               <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                OMRChecker
+                VashaGURU
               </span>
             </a>
           </div>
@@ -25,7 +25,7 @@ export default function Footer() {
               <ul class="text-gray-600 dark:text-gray-400 font-medium">
                 <li class="mb-4">
                   <a href="https://flowbite.com/" class="hover:underline">
-                    OMRChecker
+                    VashaGURU
                   </a>
                 </li>
                 <li>
