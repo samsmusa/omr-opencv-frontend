@@ -2,6 +2,9 @@ import { lazy, Suspense } from "react";
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import SuspenseLoader from "./SuspenseLoader";
+import Analytics from "../pages/Analytics";
+import FeatureAccordion from "../components/Accordions/FeatureAccordion";
+import AnalyticsAccordion from "../components/Accordions/AnalyticsAccordion";
 
 const Loader = (Component) => (props) =>
   (
@@ -23,7 +26,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: <Home />,
+        element: <FeatureAccordion />,
+      },
+      {
+        path: "analytics",
+        element: <AnalyticsAccordion />,
       },
     ],
   },
