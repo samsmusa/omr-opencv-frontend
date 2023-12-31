@@ -2,11 +2,9 @@ import { lazy, Suspense } from "react";
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import SuspenseLoader from "./SuspenseLoader";
-import OmrScan from "../pages/OmrScan";
-import OmrResults from "../pages/OmrResults";
-import Students from "../pages/Students";
-import Classes from "../pages/Classes";
-import Exam from "../pages/Exam";
+import Analytics from "../pages/Analytics";
+import FeatureAccordion from "../components/Accordions/FeatureAccordion";
+import AnalyticsAccordion from "../components/Accordions/AnalyticsAccordion";
 
 const Loader = (Component) => (props) =>
   (
@@ -28,27 +26,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: <Home />,
+        element: <FeatureAccordion />,
       },
       {
-        path: "/scan",
-        element: <OmrScan />,
-      },
-      {
-        path: "/results",
-        element: <OmrResults />,
-      },
-      {
-        path: "/students",
-        element: <Students />,
-      },
-      {
-        path: "/class",
-        element: <Classes />,
-      },
-      {
-        path: "/exams",
-        element: <Exam />,
+        path: "analytics",
+        element: <AnalyticsAccordion />,
       },
     ],
   },

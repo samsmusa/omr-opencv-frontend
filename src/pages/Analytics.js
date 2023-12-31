@@ -1,17 +1,9 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import FeatureAccordion from "../components/Accordions/FeatureAccordion";
 import Sidebar from "../components/Sidebar";
+import Navbar from "../components/Navbar";
+import AnalyticsAccordion from "../components/Accordions/AnalyticsAccordion";
 
-export const jsonStringigy = (obj) => {
-  return JSON.stringify(obj);
-};
-
-export const parseString = (str) => {
-  return JSON.parse(str);
-};
-
-export default function Home() {
+export default function Analytics() {
   return (
     <div className="min-h-screen">
       <Sidebar />
@@ -19,7 +11,7 @@ export default function Home() {
         <Navbar />
         <div className="p-4">
           <div className="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
-            <FeatureAccordion />
+            <AnalyticsAccordion />
           </div>
         </div>
       </div>
